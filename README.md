@@ -45,5 +45,4 @@
 
 
 UI:
-<img width="1440" alt="Screenshot 2024-12-23 at 3 04 07 PM" src="![Screenshot_32](https://github.com/user-attachments/assets/7a874774-69ab-427d-9fbb-bd61830a1027)
-" />
+<img width="1440" alt="Screenshot 2024-12-23 at 3 04 07 PM" src="https://github.com/user-attachments/assets/d1f51c2c-992b-4514-a9ff-68235e47a7f8" />
