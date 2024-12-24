@@ -1,29 +1,173 @@
-.App {
+/* Header */
+header {
+    background-color: #1a202c; /* bg-gray-900 */
+    padding-top: 1.5rem; /* py-6 */
+    padding-bottom: 1.5rem; /* py-6 */
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  }
+  
+  /* Inner container */
+  header .max-w-4xl {
+    max-width: 56rem; /* max-w-4xl */
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    display: flex; /* flex */
+    justify-content: space-between; /* justify-between */
+    align-items: center; /* items-center */
+  }
+  
+  /* Title */
+  header h1 {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    color: #ffffff; /* text-white */
+  }
+  
+  /* Span inside title */
+  header h1 span {
+    color: #fbbf24; /* text-yellow-400 */
+  }
+  
+  /* Paragraph */
+  header p {
+    color: #e2e8f0; /* text-gray-400 */
+    font-style: italic; /* italic */
+  }
+  
+  .App {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
-    background-color: black;
-    color: #e4e4e4;
-}
-
-#inp {
-    display :flex;
-    gap:10px;
-}
-
-h1 {
+    background-color: black; /* Deep navy for a modern look */
+    color: #e4e4e4; /* Light gray for text contrast */
+  }
+  
+  h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #ffdf8b;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-}
-
-#vishnu {
+    color: #ffdf8b; /* Brand color for the header */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  #vishnu {
     display: flex;
     gap: 10px;
-}
-
-#btns {
+  
+  }
+  #btns {
     display: flex;
     flex-direction: row;
-}
+    gap: 10px;
+  }
+  
+  .task-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-form input,
+  .task-form select,
+  .task-form button {
+    padding: 10px;
+    border: 2px solid #6c757d; /* Neutral border */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for inputs */
+    color: #333; /* Dark text for readability */
+    font-size: 1rem;
+  }
+  
+  .task-form button {
+    background-color:  #5df7d8; /* Green for action buttons */
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-form button:hover {
+    background-color: #5df79b; /* Slightly darker green on hover */
+  }
+  
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 0px solid #6c757d; /* Neutral border for tasks */
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #353535; /* Subtle navy background for tasks */
+    color: #e4e4e4; /* Light text for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  .task-list li:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    background-color: #5b5a5a;
+  }
+  
+  .task-list li.completed {
+    text-decoration: line-through;
+    color: white; /* Soft blue for completed tasks */
+  }
+  
+  .task-list button {
+    background-color: transparent;
+    border: none;
+    color: #ffdf8b; /* Brand color for buttons */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .task-list button:hover {
+    color: #f9e7b8; /* Highlighted color on hover */
+  }
+  
+  .progress-tracker {
+    margin-top: 20px;
+    color: #e4e4e4;
+  }
+  
+  .progress-bar {
+    height: 12px;
+    background: #6c757d; /* Neutral background for progress bar */
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .progress {
+    height: 100%;
+    background: linear-gradient(90deg, #feba01, #8bc34a); /* Gradient green for progress */
+    border-radius: 10px;
+    transition: width 0.3s ease;
+  }
+  
+  .clear-btn {
+    background-color: #eb521d; /* Red for clear button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+  }
+  
+  .clear-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
